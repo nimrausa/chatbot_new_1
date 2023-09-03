@@ -1,0 +1,109 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: rgb(249, 247, 247);
+}
+
+body, textarea {
+    font-family: 'Ubuntu';
+}
+
+#message-input {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    vertical-align: top;
+}
+
+#chat-messages {
+    height: calc( 100% - 200px );
+    overflow: auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.chat-message {
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+
+.incoming-message {
+    color: #fff;
+    background-color: #4a4e5a;
+}
+
+.outgoing-message {
+    color: #fff;
+    background-color: #494949;
+}
+
+#message-input {
+    margin: 20px auto;
+    resize: none;
+    border: none;
+    color: #1c1c1c;
+    background-color: #fbf7f7;
+    outline: none;
+    padding: 15px;
+    font-size: 1.1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    color: #08721c;
+    text-align: center;
+    font-size: 3.2em
+}
+h2 {
+    color: #0e0d0d;
+    text-align: center;
+    font-size: 0.9em;
+}
+h3 {
+    color: #029387;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+code {
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin: 5px;
+}
+
+#cursor {
+    width: 5px;
+    height: 20px;
+    background-color: #f9f3f3;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+a {
+    color: #f1f0f0;
+}
